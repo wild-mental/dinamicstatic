@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>게시글 작성 Form</title>
+</head>
+<body>
+<h1>아래 폼으로 게시글을 등록할 수 있습니다.</h1>
+<!-- 아래 multipart/form-data 형태의 인코딩은
+     텍스트 이외의 데이터 전송 (주로 파일 및 URL) 에서 중요하게 다뤄짐-->
+<form action="./board" method="POST" enctype="multipart/form-data">
+  <label for="title">게시글 제목 작성</label>
+  <input id="title" name="title" type="text" required>
+  <br>
+  <label for="content">게시글 본문 작성</label>
+  <textarea name="content" id="content" cols="30" rows="10" required></textarea>
+  <br>
+  <button type="submit">게시글 등록</button>
+</form>
+</body>
+</html>
