@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class SimpleController {
-    @RequestMapping("/index")
-    public String index() {
+    @RequestMapping("/index")  // URL 검색 대상 데이터
+    public String index() {       // 요청을 핸들링할 Handler
         return "/index.html";
     }
 
